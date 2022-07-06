@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=width, initial-scale=version">
+    <title>Book Form</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <header class="header flex">
+        <a class="headerLeftBtn" href="/">User Diary</a>
+        <a class="headerRightBtn" href="/users">Back</a>
+    </header>
+
+    <main class="main flex-center">
+        <div class="form-outer">
+            <span class="form-title">Add Book</span>
+            <form action="/users" method="post">
+                <input name="name" type="text" placeholder='Name'>
+                <input name="age" type="number" placeholder="Age">
+                <input name="address" type="text" placeholder="Address">
+                <input name="mobile" type="number" placeholder="Mobile">
+                <button type="submit" class="submitForm">Add Book</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
