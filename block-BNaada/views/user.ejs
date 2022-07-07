@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=width, initial-scale=version">
+    <title>User List</title>
+
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <header class="header flex">
+        <a class="headerLeftBtn" href="/">User Diary</a>
+        <a class="headerRightBtn" href="/users/new">Add Book</a>
+    </header>
+
+    <main class="main flex-column">
+        <p class="userList">Listing Users</p>
+        <% userList.forEach((user)=>{ %>
+            <div class="user-outer">
+                <h2 class="userName"><%= user.name %></h2>
+                <p class="userAge"><%= user.age %></p>
+                <p class="userAddress"><%= user.address %></p>
+                <p class="userMobile"><%= user.mobile %></p>
+                <a class="userBtn" href="/users/<%= user._id %>">Show</a>
+            </div>
+        <% }) %>
+    </main>
+</body>
+</html>

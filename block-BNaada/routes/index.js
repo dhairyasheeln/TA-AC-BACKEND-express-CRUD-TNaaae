@@ -1,0 +1,10 @@
+var express=require('express');
+var router=express.Router();
+
+/*Routes*/
+router.get('/',(req,res)=>{
+    res.render('index.ejs');
+});
+
+
+module.exports=router;
